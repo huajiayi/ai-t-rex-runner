@@ -2,6 +2,8 @@
 
 基于TensorFlow的AI小游戏，可以训练自己的模型来提高准确度，或者发挥想象力来整活
 
+在线地址：[https://blog.huajiayi.top/ai-t-rex-runner/](https://blog.huajiayi.top/ai-t-rex-runner/)
+
 目前只支持图像识别，后续会支持声音识别和姿势识别
 
 ### 如何训练自己的模型？
