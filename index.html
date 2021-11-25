@@ -14,10 +14,11 @@
 
 <body id="t" style="display: flex; flex-direction: column; justify-content: center;">
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <label for="basic-url">
-            <a href="https://teachablemachine.withgoogle.com/train/image" target="_blank">点我训练自己的模型</a>
-        </label>
-        <div style="display: flex;">
+        <div style="width: 578px;">
+            <button type="button" class="btn btn-primary" onclick="openUrl()">点我训练自己的模型</button>
+            <a href="https://github.com/huajiayi/ai-t-rex-runner#readme" target="_blank">如何训练？</a>
+        </div>
+        <div style="display: flex; margin-top: 8px;">
             <div class="input-group" style="width: 500px;">
                 <span class="input-group-addon" id="basic-addon3">https://teachablemachine.withgoogle.com/models/</span>
                 <input id="ownModel" type="text" class="form-control" aria-describedby="basic-addon3">
@@ -71,6 +72,10 @@
     // fix when running demo in ios, video will be frozen;
     if (window.navigator.userAgent.indexOf('iPhone') > -1 || window.navigator.userAgent.indexOf('iPad') > -1) {
       isIos = true;
+    }
+
+    function openUrl() {
+        window.open("https://teachablemachine.withgoogle.com/train/image");
     }
 
     function useOwnModel() {
